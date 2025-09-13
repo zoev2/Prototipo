@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindQuest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pantalla de Login -->
+  <section id="login" class="page active">
+    <div class="login-container">
+      <img src="Imagen de WhatsApp 2025-09-04 a las 18.49.04_f3128852.jpg" alt="Logo MindQuest" class="logo">
+      <h1>MindQuest</h1>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Correo Electronico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">INICIAR SESIÓN</button>
+      </form>
+      <p>¿No tiene una cuenta registrada? <a href="#">Registrarse</a></p>
+    </div>
+  </section>
+
+  <!-- Calendario -->
+  <section id="calendar" class="page">
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button class="nav-btn" onclick="prevMonth()">&lt;</button>
+        <h2>AGOSTO</h2>
+        <button class="nav-btn" onclick="nextMonth()">&gt;</button>
+      </div>
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th>DOMINGO</th><th>LUNES</th><th>MARTES</th><th>MIERCOLES</th>
+            <th>JUEVES</th><th>VIERNES</th><th>SABADO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>3</td><td class="event">!</td><td>5</td><td>6</td><td class="event">!</td><td>8</td><td>9</td></tr>
+          <tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td class="event">!</td><td>16</td></tr>
+          <tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr>
+          <tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+          <tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="calendar-footer">
+      <div class="logros">
+        <img src="Imagen de WhatsApp 2025-09-11 a las 20.07.10_8285ef28.jpg" alt="Logros" class="icon">
+        <p>LOGROS</p>
+      </div>
+      <div class="tareas">
+        <img src="Imagen de WhatsApp 2025-09-11 a las 19.31.52_5ce78d0f.jpg" alt="Tareas" class="icon">
+        <p>TAREAS</p>
+      </div>
+      <div class="insignias">
+        <img src="Imagen de WhatsApp 2025-09-11 a las 19.31.52_bd068820.jpg" alt="Insignias" class="icon">
+        <p>INSIGNIAS</p>
+      </div>
+    </div>
+
+    <div class="task-list">
+      <div class="task"><span>4 AGOSTO</span> Exposición Construcción Software</div>
+      <div class="task"><span>7 AGOSTO</span> Taller Matemáticas</div>
+      <div class="task"><span>15 AGOSTO</span> Taller Programación</div>
+      <button class="add-task">+ Añadir Tarea</button>
+    </div>
+  </section>
+
+  <!-- Tareas -->
+  <section id="tasks" class="page">
+    <div class="tabs">
+      <button onclick="showPending()">PENDIENTES</button>
+      <button onclick="showCompleted()">COMPLETADAS</button>
+    </div>
+    <div class="tasks-container" id="tasks-container">
+      <div class="task-card red">4 AGOSTO 2025</div>
+      <div class="task-card red">7 AGOSTO 2025</div>
+      <div class="task-card red">15 AGOSTO 2025</div>
+    </div>
+  </section>
+
+  <!-- Logros -->
+  <section id="achievements" class="page">
+    <h2>LOGROS</h2>
+    <div class="achievement">🏆 10 TAREAS COMPLETADAS</div>
+    <div class="achievement">🏆 100 TAREAS COMPLETADAS</div>
+  </section>
+
+  <!-- Insignias -->
+  <section id="badges" class="page">
+    <h2>INSIGNIAS</h2>
+    <div class="badge">👍 BUEN TRABAJO</div>
+    <div class="badge">🎖 PRIMERA VEZ EN LA PÁGINA</div>
+    <div class="badge">📅 1 SEMANA</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

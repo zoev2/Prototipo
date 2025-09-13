@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FFE9B5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+.login-container {
+  margin-top: 100px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+button {
+  background: #F6B93B;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.calendar-container {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.calendar th, .calendar td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.calendar .event {
+  background: orange;
+  font-weight: bold;
+  color: white;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task {
+  background: #F6B93B;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  text-align: left;
+}
+
+.task span {
+  font-weight: bold;
+}
+
+.add-task {
+  margin-top: 10px;
+}
+
+.task-card {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.task-card.red {
+  background: red;
+}
+
+.task-card.green {
+  background: green;
+}
+
+.achievement {
+  margin: 15px auto;
+  background: white;
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.badge {
+  margin: 10px;
+  background: #FFD700;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
